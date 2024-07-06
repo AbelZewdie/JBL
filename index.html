@@ -1,141 +1,225 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-      <title>JBL by Abyssinians</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">JBL</a>
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
-                  </li>
+   <title>JBL by Abyssinians</title>
+</head>
 
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">JBL</a>
 
-                  <li class="nav__item">
-                     <a href="#favorite" class="nav__link">Favorites</a>
-                  </li>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link">Home</a>
+               </li>
 
-                  <li class="nav__item">
-                     <a href="#model" class="nav__link">Models</a>
-                  </li>
-               </ul>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+               </li>
 
-               <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-                </div>
+               <li class="nav__item">
+                  <a href="#favorite" class="nav__link">Favorites</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#model" class="nav__link">Models</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle Button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content">
+               <img src="assets/img/home-img.png" alt="image" class="home__img">
+
+               <h1 class="home__title">
+                  <span>J</span>
+                  <span>B</span>
+                  <span>L</span>
+               </h1>
+
+               <div class="home__tooltip">
+                  <img src="assets/img/tooltip-right.svg" alt="" class="home__tooltip-img">
+                  <span class="home__tooltip-text">$150</span>
+               </div>
             </div>
 
-            <!-- Toggle Button -->
-             <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-             </div>
-         </nav>
-      </header>
+            <a href="#" class="home__button button">
+               Buy Now <i class="ri-play-circle-fill"></i>
+            </a>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <div class="home__content">
-                  <img src="assets/img/home-img.png" alt="image" class="home__img">
+            <div class="home__social">
+               <span class="home__social-text">Follow Us</span>
 
-                  <h1 class="home__title">
-                     <span>J</span>
-                     <span>B</span>
-                     <span>L</span>
-                  </h1>
+               <div class="home__social-links">
+                  <a href="#" target="_blank" class="home__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
 
-                  <div class="home__tooltip">
-                     <img src="assets/img/tooltip-right.svg" alt="" class="home__tooltip-img">
-                     <span class="home__tooltip-text">$150</span>
-                  </div>
+                  <a href="#" target="_blank" class="home__social-link">
+                     <i class="ri-facebook-circle-fill"></i>
+                  </a>
+
+                  <a href="#" target="_blank" class="home__social-link">
+                     <i class="ri-youtube-fill"></i>
+                  </a>
                </div>
+            </div>
+         </div>
+      </section>
 
-               <a href="#" class="home__button button">
-                  Buy Now <i class="ri-play-circle-fill"></i>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">
+                  MORE ABOUT US
+               </h2>
+
+               <p class="about__description">
+                  Enjoy award winning JBL sound with
+                  wireless listening freedom and a sleek,
+                  streamlined design with comfortable
+                  cushioned earcups that deliver premium
+                  playback for the user.
+               </p>
+
+               <a href="#" class="button">
+                  Know More <i class="ri-information-fill"></i>
                </a>
+            </div>
 
-               <div class="home__social">
-                  <span class="home__social-text">Follow Us</span>
+            <img src="assets/img/about-img.png" alt="image" class="about__img">
+         </div>
+      </section>
 
-                  <div class="home__social-links">
-                     <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-fill"></i>
-                     </a>
+      <!--==================== FAVORITE ====================-->
+      <section class="favorite section" id="favorite">
+         <h2 class="section__title">
+            CHOOSE YOUR FAVORITE
+         </h2>
 
-                     <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-circle-fill"></i>
-                     </a>
+         <div class="favorite__container">
+            <div class="favorite__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="favorite__article swiper-slide" >
+                     <img src="assets/img/favorite-1.png" alt="image" class="favorite__img">
+                     <span class="favorite__model">Black Model</span>
+                  </article>
 
-                     <a href="#" target="_blank" class="home__social-link">
-                        <i class="ri-youtube-fill"></i>
-                     </a>
-                  </div>
+                  <article class="favorite__article swiper-slide" >
+                     <img src="assets/img/favorite-2.png" alt="image" class="favorite__img">
+                     <span class="favorite__model">White Model</span>
+                  </article>
+
+                  <article class="favorite__article swiper-slide" >
+                     <img src="assets/img/favorite-3.png" alt="image" class="favorite__img">
+                     <span class="favorite__model">Red Model</span>
+                  </article>
+
+                  <article class="favorite__article swiper-slide" >
+                     <img src="assets/img/favorite-4.png" alt="image" class="favorite__img">
+                     <span class="favorite__model">Teal Model</span>
+                  </article>
+                  
                </div>
             </div>
-         </section>
+         </div>
+      </section>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+      <!--==================== MODEL ====================-->
+      <section class="model section" id="model">
+         <h2 class="section__title">
+            MODEL SPECIFICATIONS
+         </h2>
 
-         <!--==================== FAVORITE ====================-->
-         <section class="favorite section" id="favorite">
-            
-         </section>
+         <div class="model__container container grid">
+            <div class="model__content">
+               <img src="assets/img/model-img.png" alt="image" class="model__img">
 
-         <!--==================== MODEL ====================-->
-         <section class="model section" id="model">
-            
-         </section>
+               <div class="model__tooltip model__tooltip-1">
+                  <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Best Comfort</span>
+               </div>
 
-         <!--==================== SPONSOR ====================-->
-         <section class="sponsor section">
-            
-         </section>
-      </main>
+               <div class="model__tooltip model__tooltip-2">
+                  <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Easy Adjustment</span>
+               </div>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+               <div class="model__tooltip model__tooltip-3">
+                  <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Fast Charge</span>
+               </div>
 
-      <!--========== SCROLL UP ==========-->
-      
+               <div class="model__tooltip model__tooltip-4">
+                  <img src="assets/img/tooltip-right.svg" alt="" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Custom Audio</span>
+               </div>
+            </div>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+            <a href="#" class="model__button button">
+               Buy Now <i class="ri-play-circle-fill"></i>
+            </a>
+         </div>
+      </section>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <!--==================== SPONSOR ====================-->
+      <section class="sponsor section">
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src=""></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
 </html>

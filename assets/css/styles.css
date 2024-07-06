@@ -187,7 +187,18 @@ img {
 }
 
 /* Add blur header */
-
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(23, 12%, 4%, .2);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active link */
 
@@ -317,16 +328,124 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 3.5rem;
+}
 
+.about__data{
+  text-align: center;
+}
+
+.about__description{
+  margin-bottom: 2.5rem;
+}
+
+.about__img{
+  width: 280px;
+  justify-self: center;
+}
 
 /*=============== FAVORITE ===============*/
+.favorite__container{
+  padding-top: 2rem;
+}
 
+.favorite__article{
+  width: 220px;
+  display: grid;
+  justify-items: center;
+  filter: blur(8px);
+  scale: .8;
+  transition: filter .3s, scale .3s;
+}
+
+.favorite__img{
+  width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+.favorite__model{
+  background: var(--gradient-color);
+  padding: .5rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+}
 
 /* Swiper class */
-
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+  filter: blur(0);
+  scale: 1;
+}
 
 /*=============== MODEL ===============*/
+.model__container{
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
 
+.model__content{
+  position: relative;
+  justify-self: center;
+}
+
+.model__img{
+  width: 280px;
+}
+
+.model__tooltip-img{
+  width: 60px;
+}
+
+.model__tooltip-text{
+  background: var(--gradient-color);
+  padding: .25rem .75rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  position: absolute;
+  transform: translate(60px, -40px);
+  white-space: nowrap;
+}
+
+.model__tooltip-1,
+.model__tooltip-2{
+  transform: scaleX(-1);
+}
+
+.model__tooltip-1 .model__tooltip-text,
+.model__tooltip-2 .model__tooltip-text{
+  transform: translate(60px, -40px) scaleX(-1);
+}
+
+.model__tooltip{
+  position: absolute;
+}
+
+.model__tooltip-1{
+  top: 5.5rem;
+  left: 5rem;
+}
+
+.model__tooltip-2{
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.model__tooltip-3{
+  bottom: 1.8rem;
+  left: 3.5rem;
+}
+
+.model__tooltip-4{
+  bottom: 7rem;
+  right: 5rem;
+}
+
+.model__button{
+  justify-self: center;
+}
 
 /*=============== SPONSOR ===============*/
 
